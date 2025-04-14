@@ -1,0 +1,67 @@
+.title-name {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    color: #666666;
+}
+
+
+.last-name {
+    margin-left: 1rem;
+    color: var(--primary-dark);
+}
+
+.he-him {
+    font-size: 0.8em;
+    color: var(--light-text);
+    margin-left: 20px;
+}
+
+.sub-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: gray;
+    letter-spacing: -0.01em;
+
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-bottom: 15%;
+    display: flex;
+    gap: 15px;
+    /* Space between icons */
+    justify-content: centerleft;
+}
+
+.social-icons a {
+    color: gray;
+    /* Icon color */
+    font-size: 2rem;
+    /* Icon size */
+    /*transition: transform 0.3s, color 0.3s; */
+}
+
+.social-icons a:hover {
+    /* transform: scale(1.2); */ 
+    /* Slightly enlarge on hover */
+    color: var(--primary-color);
+    /* Change color on hover (optional) */
+    font-size: 2.5rem;
+}
+
+h2{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+ul{
+    list-style-type: circle;
+    padding-left: 0;
+    margin: 20px;
+}

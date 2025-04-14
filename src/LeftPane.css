@@ -1,0 +1,216 @@
+/* Base Styles */
+.left-pane {
+    --primary-color: #bd5d38;
+    --primary-light: #d68a6b;
+    --primary-dark: #874126;
+    --text-color: #fff;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    gap: 15px; /* Consistent spacing */
+    padding-top: 20%;
+}
+
+.profile-info {
+    margin: 0;
+}
+
+/* Desktop Profile Section */
+.desktop-profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    border-color: var(--primary-light);
+    border-width: 0.4rem;
+}
+
+/* Navigation Links - Desktop */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 5%;
+    background: none;
+    border: none;
+    color: white;
+    text-align: justify;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--primary-light);
+}
+
+.nav-link.active {
+    background-color: var(--primary-dark);
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Mobile Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Responsive Styles (Below 800px) */
+@media (max-width: 800px) {
+
+    /* Smooth Transition for Left Pane */
+    .left-pane {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Smooth Transition for Navigation Links */
+    .nav-links {
+        transition: max-height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+
+    /* Smooth Transition for Profile Picture */
+    .profile-pic {
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out, border-width 0.3s ease-in-out;
+    }
+    /* App Container */
+    .app-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Left Pane and Main Content */
+    .left-pane,
+    .main-content {
+        width: 100%;
+    }
+
+    .left-pane {
+        height: fit-content;
+        flex-direction: row;
+    }
+
+    /* Hide Desktop Profile */
+    .desktop-profile {
+        display: none;
+    }
+
+    /* Show Mobile Header */
+    .mobile-header {
+        display: flex;
+    }
+
+    /* Header Container */
+    .header-container {
+        flex: 0 0 70%; /* Fixed width for profile picture */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    /* Header Toggle */
+    .header-toggle {
+        display: block;
+        flex: 0 0 30%; /* Fixed width for toggle button */
+    }
+
+    /* Profile Section */
+    .profile-section {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 80px;
+        margin: 0;
+        border-color: var(--primary-light);
+        border-width: 0.2rem;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+        display: block;
+        align-self: right;
+    }
+
+    /* Navigation Links - Mobile */
+    .nav-links {
+        position: static;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+        background-color: transparent;
+        align-items: right;
+    }
+
+    .nav-links.mobile-open {
+        max-height: fit-content;
+    }
+
+    .nav-link {
+        width: fit-content; /* Adjusted to avoid overflow */
+        margin: 0;
+        align-self: flex-end;
+        padding: 5% ;
+    }
+    
+    .mobile-menu-toggle {
+    margin-left: auto;
+    margin-right: 0;
+    align-self: flex-start;
+    }
+
+}
