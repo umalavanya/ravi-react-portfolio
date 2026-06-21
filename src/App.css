@@ -18,8 +18,8 @@
   width: 80%;
   padding: 40px;
   background-color: #f8f1ec;
-  height: calc(100vh + fit-content); /* Adjust height dynamically */
-
+  min-height: 100vh;
+    height: auto;
 }
 
 
