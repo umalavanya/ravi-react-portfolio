@@ -70,7 +70,7 @@ const About = () => {
           <div className="name-container">
             <table>
               <tr styles="margin:0px">
-                <td><h1 className="first-name"><u>Ravi Kumar</u></h1></td>
+                <td><h1 className="first-name">Dr. <u>Ravi Kumar</u></h1></td>
                 <td><h1 className="last-name">&emsp;Bandapelli</h1></td>
 
               </tr>

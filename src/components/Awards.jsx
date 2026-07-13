@@ -245,7 +245,7 @@ const Awards = () => {
     }, 8000);
 
     return () => clearInterval(interval);
-  }, [selectedAward]);
+  }, [selectedAward,awardsData]);
 
   return (
     <div className="content-section active awards-dashboard">

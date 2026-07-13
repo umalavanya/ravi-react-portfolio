@@ -47,14 +47,15 @@
     grid-column: 1 / -1;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
-    padding: 20px;
+    padding: 100px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    
 }
 
 .timeline-line {
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 50px;
     right: 40px;
     height: 6px;
     background: linear-gradient(90deg, #bd5d38, #d88c6a, #bd5d38);
@@ -66,6 +67,7 @@
 .timeline-node {
     position: absolute;
     top: 50%;
+    left: 50px ;
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: all 0.3s ease;

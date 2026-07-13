@@ -27,7 +27,7 @@ const LeftPane = ({ activeSection, setActiveSection }) => {
 
   return (
     <div className="left-pane">
-
+      
       <div className="header-container">
         <div className="profile-section">
           <img 
@@ -41,9 +41,7 @@ const LeftPane = ({ activeSection, setActiveSection }) => {
           <div className="profile-info">
             <h4>Ravi Kumar Bandapelli</h4>
           </div>
-        </div>
-
-        
+        </div>  
       </div>
 
       <div className="header-toggle">
@@ -78,14 +76,7 @@ const LeftPane = ({ activeSection, setActiveSection }) => {
         ))}
       </nav>
 
-      
-
       </div>
-
-      
-        
-        
-
 
     </div>
   );
